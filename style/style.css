@@ -1,0 +1,393 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    
+}
+
+ .banner{
+    position: relative;
+    width: 100%;
+    height:100vh;
+    background-color: #00000080;
+    background-image: url('../images/dinner.jpg');
+  background-size:1500px 800px;
+}
+.banner .content{
+    position: absolute;
+    top: 200px;
+
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-direction: column;
+
+}
+.content h2{
+    padding: 0px 5px;
+    background-color:rgba(0,0,0,0.4);
+    text-align: center;
+    color:#fff;
+    text-shadow: 0px 0px 5px red;
+    text-align-last: center;
+    font-weight: 700px;
+}
+.content p{
+  width: 700px;
+    text-align: center;
+    font-weight: 700px;
+    background-color:rgba(0,0,0,0.4);
+font-size: 22px;
+color:#fff;
+margin-top: 10px;
+
+}
+
+header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+padding: 40px 100px;
+    /* background-color: white; */
+    display: flex;
+    z-index: 1000;
+    justify-content:space-between;
+    align-items: center;
+    transition: 0.5s;
+    /* opacity: 0.2; */
+}
+
+ #ourmenu{
+    
+    display: inline-block;
+   width: 120px;
+   height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: crimson;
+    color: #fff;
+    font-size: 22px;
+    font-weight:700px;
+    margin-top: 28px;
+    text-decoration: none;
+
+}
+header #logo{
+    color: black;
+    font-weight: 600px;
+
+}
+ .sticky{
+  
+    background-color: white;
+    padding: 10px 100px;
+ }
+header #navigation{
+    position: relative;
+    color: green;
+    display: flex;
+    /* margin-right: 150px; */
+}
+ header #navigation li{
+    list-style: none;
+    font-size: 18px;
+    margin-left: 5px;
+  
+    background-color: rgba(210,30,10,0.4);
+}
+header #navigation li a{
+   color: black;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+  width: 95px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+}
+#navigation li a:hover{
+    background-color: rgba(10,130,110,0.8);
+    color: #fff;
+}
+
+.about_us{
+    position: relative;
+    width: 100%;
+    height: 95vh;
+    background-color: goldenrod;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+ flex-wrap: wrap;
+ /* flex-direction: column; */
+}
+.about_us .aboutcontent{
+    width:400px;
+    height: 300px;
+    text-align: center;
+    /* border: 0.5px solid black; */
+   
+}
+.about_us .aboutcontent h2{
+    font-size: 22px;
+    text-align: left;
+    margin-left: 10px;
+}
+.about_us .aboutcontent p{
+    width: 90%;
+    height: 300px;
+    text-align: center;
+    text-align-last: center;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.about_us .image{
+    position: relative;
+    width: 400px;
+    height: 300px;
+
+}
+.about_us .image img{
+position: absolute;
+top: 0px;
+left: 0px;
+width: 100%;
+height: 100%;
+}
+section{
+    padding: 60px 0px;
+}
+.menu{
+    
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: rosybrown;
+}
+.menucontent{
+    width: 80%;
+    min-height: 80vh;
+  
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.menucontent .menuitem{
+    width: 300px;
+    height: 250px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 8px;
+}
+.menucontent .menuitem img{
+    width: 280px;
+    height: 280px;
+}
+.menuitem p{
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.kitchen{
+    width: 100%;
+    min-height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: aquamarine; */
+}
+.stop{
+    width: 80%;
+    min-height: 80vh;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+.stop .stopmember{
+    width: 280px;
+    height: 280px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.stop .stopmember img{
+    width: 280px;
+    height: 280px;
+
+}
+
+.testmonials{
+    width: 100%;
+    min-height:92vh;
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+    flex-direction: column;
+   background-image: url('../images/spaghetti.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   
+}
+.testmonials h2,#testpara{
+    margin-top: 28px;
+    color: #fff;
+}
+.testmonials h2{
+    word-spacing: 4px;
+}
+.testmonials .testbox{
+    width: 100%;
+    min-height: 95vhs;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.testbox .testcustomer{
+    position: relative;
+    width: 280px;
+    height: 330px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.testbox .testcustomer #imgbox1{
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url('../images/test1.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 3px;
+}
+.testbox .testcustomer #imgbox2{
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url('../images/test2.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 3px;
+}
+.testbox .testcustomer #imgbox3{
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url('../images/test3.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 3px;
+}
+.testcustomer p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700px;
+    letter-spacing: 0.6px;
+    width: 210px;
+    margin-top: 70px;
+}
+.contect{
+    width: 100%;
+    min-height: 92vh;
+    background-color:#fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    /* background-image: url('../images/dinner.jpg'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contenttag{
+    background-color:#fff;
+    box-shadow: 0px 0px 4px red;
+}
+#contentimage{
+    background-color: rgba(0,0,10,0.1);
+}
+.contect .contentbox{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contentbox .contentitem{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 8px;
+box-shadow: 0px 0px 3px gray,
+0px 0px 6px gray;
+    
+}
+.contentbox #contentimage img{
+    width: 300px;
+    
+}
+.contentitem input{
+    width:90%;
+    height: 30px;
+    text-align: center;
+    font-size: 22px;
+    text-transform: capitalize;
+    font-weight: 700px;
+    margin-top: 6px;
+    margin-left: 10px;
+}
+.contentitem button{
+    margin: 7px 10px;
+    width: 90px;
+    height: 30px;
+    background-color: crimson;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 22px;
+    cursor: pointer;
+}
+.footer{
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+}
+

@@ -1,0 +1,158 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
+    <title></title>
+</head>
+<body>
+<header id="">
+<h1 id="logo">Logo</h1>
+<ul id="navigation">
+<li><a href="#banner"  onclick="moveBox()">Home</a></li>
+<li><a href="#about"  onclick="moveBox()">About</a></li>
+<li><a href="#menu" onclick="moveBox()">Menu</a></li>
+<li><a href="#expert"  onclick="moveBox()">Expert</a></li>
+<li><a href="#testmonials" onclick="moveBox()">Testmonials</a></li>
+<li><a href="#content"  onclick="moveBox()">Content</a></li>
+</ul>
+</header>
+<section class="banner" id="banner">
+<div class="content">
+<h2>Always Choose Fresh</h2>
+<p>
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi itaque voluptates in totam laborum molestiae nulla, facere illo culpa illum
+ voluptate quos quam repudiandae eum, cupiditate, ut doloremque quas repellat.
+</p>
+<a href="#" id="ourmenu">Our Menu</a>
+</div>
+</section>  
+<section>
+<div class="about_us" id="about">
+<div class="aboutcontent">
+<h2><span style="display:inline-block;color:red; font-size: 28px; font-weight:1800px; width:">A</span>bout us</h2>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci rem hic aspernatur non quisquam ducimus. Dicta harum officiis corporis nesciunt, enim id blanditiis quam ducimus animi, recusandae 
+magni amet quis vel tempore. Mollitia, nihil praesentium. Nesciunt quae natus ratione ducimus?</p>
+
+</div>
+
+<div class="image">
+<img src="images/spaghetti.jpg" />
+</div>
+</div> 
+</section>
+<section class="menu" id="menu">
+<h2>Our Menu</h2>
+<p>Lorem ipsum dolor sit amet.</p>
+<div class="menucontent">
+<div class="menuitem">
+<img src="images/salad2.jpg" />
+<h5>Special salad</h5>
+</div>
+<div class="menuitem">
+    <img src="images/pasta.jpg" />
+    <h5>Special Pasta</h5>
+</div>
+<div class="menuitem">
+    <img src="images/soup1.jpg" />
+    <h5>Special soup</h5>
+</div>
+<div class="menuitem">
+    <img src="images/salad3.jpg" />
+    <h5>Special salad</h5>
+</div>
+<div class="menuitem">
+    <img src="images/pizza.webp" />
+    <h5>Special pizza</h5>
+</div>
+<div class="menuitem">
+    <img src="images/soup2.jpg" />
+    <h5>Special soup</h5>
+</div>
+</div>
+</section>
+<section class="kitchen" id="expert">
+    <h2>Our Kitchen <span style="color:red; font-weight:bold; font-size:32px;">E</span>xpert</h2>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <div class="stop">
+    <div class="stopmember">
+        <img src="images/pizzamaker.jpg" />
+        <h5>Special Pasta</h5>
+    </div>
+    <div class="stopmember">
+        <img src="images/cook.webp" />
+        <h5>Special Pasta</h5>
+    </div>
+    <div class="stopmember">
+        <img src="images/unnamed.webp" />
+        <h5>Special Pasta</h5>
+    </div>
+    </div>
+    </section>
+    <section class="testmonials" id="testmonials">
+    <h2>They <span style="color:red; font-weight:bold; font-size:32px;">S</span>aid About Us</h2>
+    <p id="testpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sapiente!</p>
+    <div class="testbox">
+    <div class="testcustomer">
+        <div id="imgbox1"></div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis,  voluptatum quasi beatae, dolorum, laudantium fugiat amet, eum harum eius iure repellendus. Quibusdam nemo possimus laboriosam esse in iste quaerat provident quasi harum 
+        </p>
+        <h3>Someone Famous</h3>
+    </div>
+    <div class="testcustomer">
+        <div id="imgbox2"></div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis,  voluptatum quasi beatae, dolorum, laudantium fugiat amet, eum harum eius iure repellendus. Quibusdam nemo possimus laboriosam esse in iste quaerat provident quasi harum 
+            <h3>Someone Famous</h3>
+    </div>
+    <div class="testcustomer">
+        <div id="imgbox3"></div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis,  voluptatum quasi beatae, dolorum, laudantium fugiat amet, eum harum eius iure repellendus. Quibusdam nemo possimus laboriosam esse in iste quaerat provident quasi harum 
+            <h3>Someone Famous</h3>
+    </div>
+    </div>
+    </section>
+<section class="contect" id="content">
+    <h2> <span style="color:red; font-weight:bold; font-size:32px;">C</span>ontect Us</h2>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <div class="contentbox">
+    <div class="contentitem contenttag">
+    <h3>Send Message</h3>
+    <form>
+    <input type="text" placeholder="Enter Your Name"/><br>
+    <input type="email" placeholder="Enter Your Email"/><br>
+    <input type="text" placeholder="Enter Your Message"/><br>
+    <button>Send</button>
+    </form>
+    </div>
+    <div class="contentitem" id="contentimage">
+    <img src="images/spoons.jpg"/>
+    </div>
+    </div>
+    
+    </section>
+    <div class="footer">
+    <h2>Copyright @ me</h2>
+    </div>
+</body>
+<script>
+window.addEventListener('scroll',function(){
+header=document.querySelector('header');
+header.classList.toggle('sticky',window.scrollY>0);
+})
+let menuBar=document.querySelector('header');
+let element=document.createElement('div');
+element.classList.add("humBarger");
+menuBar.append(element);
+let menuToggle=document.querySelector(".humBarger");
+menuToggle.addEventListener('click',fun1);
+function fun1(){
+menuBar.classList.toggle("ulToggle");
+}
+function moveBox(){
+    menuBar.classList.remove('ulToggle')
+}
+
+</script>
+</html>
